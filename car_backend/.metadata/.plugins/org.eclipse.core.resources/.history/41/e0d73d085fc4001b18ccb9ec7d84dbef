@@ -1,0 +1,38 @@
+package com.example.demo.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "customer")
+public class Customer {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int customer_id;
+	
+	@Column(name = "customer_name")
+	private String customerName;
+	
+	@Column(name = "customer_email_id")
+	private String customerEmail;
+	
+	@Column(name = "customer_password")
+	private String customerContactno;
+	
+	@Column(name = "customer_contactno")
+	private String customerPassword;
+	
+	@Column(name = "customer_addess")
+	private String customerAddress;
+	
+	@Column(name = "customer_wallet")
+	private double customerWallet;
+
+}
+
+
